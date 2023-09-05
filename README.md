@@ -4,7 +4,7 @@
 Ignite Fleet - Offline First
 </h1>
 
-> Status from Project: <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" /> Finished <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" />
+> Status from Project: <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" /> Under construction <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" />
 
 ## Shields
 
@@ -28,7 +28,7 @@ Ignite Fleet - Offline First
 
 ## Demonstration
 
-<img src="https://i.ibb.co/z5qZT28/face-Detect.png" alt="face-Detect" width="100%" border="0">
+<img src="" alt="face-Detect" width="100%" border="0">
 
 ## Install
 
