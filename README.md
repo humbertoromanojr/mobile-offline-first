@@ -1,7 +1,7 @@
 <h1 align="center">
 <img src="https://i.ibb.co/drVxZ50/offline-first.png" alt="offline-first" width="100%" border="0">
 <br>
-Ignite Fleet - Offline First
+Ignite Fleet
 </h1>
 
 > Status from Project: <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" /> Under construction <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" />
@@ -28,11 +28,11 @@ Ignite Fleet - Offline First
 
 ## Outher Intalations
 
-Install fonts google: `npx i expo-font @expo-google-fonts/roboto`
+Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
 
 ## Demonstration
 
-<img src="" alt="face-Detect" width="100%" border="0">
+<img src="https://drive.google.com/file/d/1vrz02Q1gYuSR1Vq5X3fVFZSjdWJ7yjE8/view?usp=drive_link" alt="face-Detect" width="100%" border="0">
 
 ## Install
 
@@ -57,9 +57,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 
 ## Sources:
 
-- https://www.youtube.com/watch?v=jIeOSfYw67U
-- https://getemoji.com/
-- https://expo.dev/
+- rocketseat.com.br
+- getemoji.com
+- expo.dev
 
 ## Author
 
