@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="" alt="" width="100%" border="0" />
+<img src="https://i.ibb.co/drVxZ50/offline-first.png" alt="offline-first" width="100%" border="0">
 <br>
 Ignite Fleet - Offline First
 </h1>
@@ -16,7 +16,7 @@ Ignite Fleet - Offline First
 ![Badge](https://img.shields.io/github/license/humbertoromanojr/mobile-offline-first)
 ![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fmobile-offline-first)
 
-### MOBILE LIBRARIES
+## MOBILE LIBRARIES
 
 - <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
 - <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
@@ -24,7 +24,11 @@ Ignite Fleet - Offline First
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
-- [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated)
+- [Styled Components](https://styled-components.com/docs)
+
+## Outher Intalations
+
+Install fonts google: `npx i expo-font @expo-google-fonts/roboto`
 
 ## Demonstration
 
@@ -64,8 +68,8 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 :guitar: Humberto Jr :guitar:
 <br />
 
-LinkedIn: https://www.linkedin.com/in/junior-dev <br />
-GitLab: https://gitlab.com/hjrdev <br />
+LinkedIn: https://www.linkedin.com/in/humbertoromanojr <br />
+GitLab: https://gitlab.com/humbertoromanojr <br />
 <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" />: astronomi@gmail.com <br />
 <br />
 
