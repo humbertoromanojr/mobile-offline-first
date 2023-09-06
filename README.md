@@ -32,7 +32,8 @@ Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
 
 ## Demonstration
 
-<img src="https://drive.google.com/file/d/1vrz02Q1gYuSR1Vq5X3fVFZSjdWJ7yjE8/view?usp=drive_link" alt="face-Detect" width="100%" border="0">
+<img src="https://drive.google.com/uc?export=view&id=1Hzy58C2V9femT71kkl9wCB9D-Yru9_D6" alt="ignite-fleet" width="100%" border="0">
+<img src="https://drive.google.com/uc?export=view&id=1vrz02Q1gYuSR1Vq5X3fVFZSjdWJ7yjE8" alt="ignite-fleet" width="100%" border="0">
 
 ## Install
 
