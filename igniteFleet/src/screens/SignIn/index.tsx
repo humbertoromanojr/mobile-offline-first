@@ -1,11 +1,15 @@
-import { Text, View } from "react-native"
+import { Container, Title, Slogan } from "./styles"
 
-import { styles } from "./styles"
+import { Button } from "../../components/Button"
+
+import backgroundImg from "../../assets/background.png"
 
 export function SignIn() {
   return (
-    <View style={styles.container}>
-      <Text>Hellow World!!!</Text>
-    </View>
+    <Container source={backgroundImg}>
+      <Title>Car Fleet</Title>
+      <Slogan>Gestão de aluguel de veículos</Slogan>
+      <Button title="Entrar com Google" />
+    </Container>
   )
 }
