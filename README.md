@@ -32,7 +32,6 @@ Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
 
 ## Demonstration
 
-<img src="https://drive.google.com/uc?export=view&id=1Hzy58C2V9femT71kkl9wCB9D-Yru9_D6" alt="ignite-fleet" width="100%" border="0">
 <img src="https://drive.google.com/uc?export=view&id=1vrz02Q1gYuSR1Vq5X3fVFZSjdWJ7yjE8" alt="ignite-fleet" width="100%" border="0">
 
 ## Install
@@ -69,10 +68,10 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 :guitar: Humberto Jr :guitar:
 <br />
 
-LinkedIn: https://www.linkedin.com/in/humbertoromanojr <br />
-GitLab: https://gitlab.com/humbertoromanojr <br />
-<img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" />: astronomi@gmail.com <br />
-<br />
+- [Linkedin](https://www.linkedin.com/in/humbertoromanojr) <br />
+- [Gitlab](https://gitlab.com/humbertoromanojr) <br />
+  <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" />: astronomi@gmail.com <br />
+  <br />
 
 Made with :heart: and lots of animation by :guitar: Humberto Jr :guitar:
 
