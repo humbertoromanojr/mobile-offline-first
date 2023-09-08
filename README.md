@@ -25,10 +25,15 @@ Ignite Fleet
 - [Typescript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
 - [Styled Components](https://styled-components.com/docs)
+- [React Native Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 
 ## Outher Intalations
 
-Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
+- Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
+- .env-example: `You will need to create your IDs`
+- Setting OAuth2 from Google:
+  - [English](https://www.youtube.com/watch?v=qjWm06CUAZI)
+  - [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90)
 
 ## Demonstration
 
@@ -64,7 +69,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 ## Author
 
 <img src="https://avatars1.githubusercontent.com/u/6500430?s=460&u=42d7e22fa1c77b061505fe1cfc3fcaa3e2a4d1e5&v=4" width="80" alt="linkedin.com/in/junior-dev" />
-<img src="https://drive.google.com/uc?export=view&id=1-y6rFrn4uqPfLx3nuUTXh14OeRGSZzHu" alt="" width="42" border="0" /> - :guitar: Humberto Jr :guitar:
+<img src="https://drive.google.com/uc?export=view&id=1-y6rFrn4uqPfLx3nuUTXh14OeRGSZzHu" alt="" width="42" border="0" /> :guitar: Humberto Jr :guitar:
 <br /> <br />
 
 - [Linkedin](https://www.linkedin.com/in/humbertoromanojr) <br />
