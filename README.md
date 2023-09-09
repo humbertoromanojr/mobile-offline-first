@@ -16,7 +16,7 @@ Ignite Fleet
 ![Badge](https://img.shields.io/github/license/humbertoromanojr/mobile-offline-first)
 ![Badge](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fhumbertoromanojr%2Fmobile-offline-first)
 
-## MOBILE LIBRARIES
+## Mobile Libraries
 
 - <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
 - <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
@@ -24,16 +24,29 @@ Ignite Fleet
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
+- [Expo Web Browser](https://docs.expo.dev/versions/v49.0.0/sdk/webbrowser/)
+- [Expo AuthSession](https://docs.expo.dev/versions/latest/sdk/auth-session/)
 - [Styled Components](https://styled-components.com/docs)
 - [React Native Dotenv](https://github.com/goatandsheep/react-native-dotenv)
+- [MongoDB Atlas](https://mongodb.com)
+- [RealmDB](https://www.mongodb.com/docs/realm/sdk/react-native/install/)
 
-## Outher Intalations
+## Important Settings
+
+🇺🇸
+These other settings are extremely important, without them, your application will not work, if you do not follow the step by step.
+
+🇧🇷
+Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
 - Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
 - .env-example: `You will need to create your IDs`
 - Setting OAuth2 from Google:
   - [English](https://www.youtube.com/watch?v=qjWm06CUAZI)
   - [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90)
+- Setting MongoDB Atlas:
+  - [English](https://www.youtube.com/watch?v=xrc7dIO_tXk)
+  - [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8)
 
 ## Demonstration
 
