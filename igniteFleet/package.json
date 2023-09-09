@@ -10,16 +10,18 @@
   },
   "dependencies": {
     "@expo-google-fonts/roboto": "^0.2.3",
+    "@realm/react": "^0.6.0",
     "expo": "~49.0.8",
+    "expo-auth-session": "~5.0.2",
+    "expo-crypto": "~12.4.1",
     "expo-font": "~11.4.0",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
+    "expo-web-browser": "~12.3.2",
     "react": "18.2.0",
     "react-native": "0.72.4",
-    "styled-components": "^6.0.7",
-    "expo-splash-screen": "~0.20.5",
-    "expo-web-browser": "~12.3.2",
-    "expo-auth-session": "~5.0.2",
-    "expo-crypto": "~12.4.1"
+    "realm": "^12.1.0",
+    "styled-components": "^6.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
