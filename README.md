@@ -26,10 +26,14 @@ Ignite Fleet
 - [Expo](https://expo.dev/)
 - [Expo Web Browser](https://docs.expo.dev/versions/v49.0.0/sdk/webbrowser/)
 - [Expo AuthSession](https://docs.expo.dev/versions/latest/sdk/auth-session/)
+- [Expo Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
+- [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
 - [Styled Components](https://styled-components.com/docs)
 - [React Native Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 - [MongoDB Atlas](https://mongodb.com)
 - [RealmDB](https://www.mongodb.com/docs/realm/sdk/react-native/install/)
+- [Phosphor icons](https://github.com/duongdev/phosphor-react-native)
+- [React navigation](https://reactnavigation.org/docs/getting-started/)
 
 ## Important Settings
 
@@ -47,6 +51,12 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 - Setting MongoDB Atlas:
   - [English](https://www.youtube.com/watch?v=xrc7dIO_tXk)
   - [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8)
+- If it doesn't show your Avatar, it shows the image in blur:
+  - [BlurHash](https://blurha.sh/)
+- React navigation:
+  - npm install @react-navigation/native
+  - npx expo install react-native-screens react-native-safe-area-context
+  - npm install @react-navigation/native-stack
 
 ## Demonstration
 
