@@ -2,11 +2,11 @@ import styled from "styled-components/native"
 
 export const Container = styled.View`
   flex: 1;
+
+  background: ${({ theme }) => theme.COLORS.GRAY_800};
 `
 
-export const Title = styled.Text`
-  align-items: center;
-  justify-content: center;
-
-  font-size: 26px;
+export const Content = styled.View`
+  flex: 1;
+  padding: 12px;
 `
