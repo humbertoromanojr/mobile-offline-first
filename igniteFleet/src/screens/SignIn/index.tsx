@@ -8,7 +8,7 @@ import { ANDROID_CLIENT_ID, IOS_CLIENT_ID } from "@env"
 
 import { Button } from "../../components/Button"
 
-import { Container, Title, Slogan } from "./styles"
+import { Container, Title, Slogan, Content } from "./styles"
 
 import backgroundImg from "../../assets/background.png"
 
@@ -62,8 +62,10 @@ export function SignIn() {
 
   return (
     <Container source={backgroundImg}>
-      <Title>Car Fleet</Title>
-      <Slogan>Gestão de aluguel de veículos</Slogan>
+      <Content>
+        <Title>Car Fleet</Title>
+        <Slogan>Gestão de aluguel de veículos</Slogan>
+      </Content>
       <Button
         title="Entrar com Google"
         onPress={handleGoogleSignIn}

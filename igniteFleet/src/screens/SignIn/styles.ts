@@ -7,6 +7,15 @@ export const Container = styled.ImageBackground`
   background-color: ${({ theme }) => theme.COLORS.GRAY_800};
 `
 
+export const Content = styled.View`
+  flex: 1;
+  display: flex;
+  margin-top: 25px;
+  justify-content: flex-start;
+
+  border-radius: 12px;
+`
+
 export const Title = styled.Text`
   color: ${({ theme }) => theme.COLORS.BRAND_LIGHT};
   font-size: ${({ theme }) => theme.FONT_SIZE.XXXL}px;
