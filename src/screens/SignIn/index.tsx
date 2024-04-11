@@ -1,11 +1,17 @@
-import { View, Text } from "react-native";
+import { useState, useContext } from "react";
+import { Alert } from "react-native";
 
-import { styles } from "./styles";
+import { Container, Title, Slogan, Content } from "./styles";
+
+import backgroundImg from "../../assets/background.png";
 
 export function SignIn() {
   return (
-    <View style={styles.container}>
-      <Text>Hello World!!!</Text>
-    </View>
+    <Container source={backgroundImg}>
+      <Content>
+        <Title>Car Fleet</Title>
+        <Slogan>Gestão de aluguel de veículos</Slogan>
+      </Content>
+    </Container>
   );
 }
