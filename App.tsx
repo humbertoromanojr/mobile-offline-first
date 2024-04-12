@@ -14,6 +14,9 @@ import { Home } from "./src/screens/Home";
 // components
 import { Loading } from "./src/components/Loading";
 
+// routes
+import { Routes } from "./src/routes";
+
 // settings
 import { REALM_APP_ID } from "@env";
 import theme from "./src/theme";
@@ -34,7 +37,7 @@ export default function App() {
           translucent
         />
         <UserProvider fallback={SignIn}>
-          <Home />
+          <Routes />
         </UserProvider>
       </ThemeProvider>
     </AppProvider>
