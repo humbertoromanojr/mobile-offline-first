@@ -1,5 +1,6 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import {
+  Alert,
   KeyboardAvoidingView,
   Platform,
   ScrollView,
@@ -12,15 +13,26 @@ import { TextAreaInput } from "../../components/TextAreaInput";
 import { LicensePlateInput } from "../../components/LicensePlateInput";
 
 import { Container, Content } from "./styles";
+import { licensePlateValidate } from "../../utils/licensePlateValidate";
 
 const KeyboardAvoidingViewBehavior =
   Platform.OS === "android" ? "height" : "position";
 
 export function Departure() {
+  const [licensePlate, setLicensePlate] = useState("");
+  const [description, setDescription] = useState("");
+
   const descriptionRef = useRef<TextInput>(null);
+  const licensePlateRef = useRef<TextInput>(null);
 
   function handleDepartureRegister() {
-    console.log("==> OK");
+    if (!licensePlateValidate(licensePlate)) {
+      licensePlateRef.current?.focus();
+      Alert.alert(
+        "Plate is Invalid",
+        "Invalid Plate,  informe correctly plate from your car please"
+      );
+    }
   }
 
   return (
@@ -34,13 +46,19 @@ export function Departure() {
         <ScrollView showsVerticalScrollIndicator={false}>
           <Content>
             <LicensePlateInput
+              ref={licensePlateRef}
               label="Placa do veículo"
               placeholder="BRA4321"
               onSubmitEditing={() => descriptionRef.current?.focus()}
               returnKeyType="next"
+              onChangeText={setLicensePlate}
             />
 
-            <TextAreaInput ref={descriptionRef} label="Finalidade" />
+            <TextAreaInput
+              ref={descriptionRef}
+              label="Finalidade"
+              onChangeText={setDescription}
+            />
 
             <Button title="Registrar Saída" onPress={handleDepartureRegister} />
           </Content>
