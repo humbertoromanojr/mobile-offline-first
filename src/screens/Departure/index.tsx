@@ -1,7 +1,7 @@
-import { Header } from "../../components/Header"
-import { LicensePlateInput } from "../../components/LicensePlateInput"
+import { Header } from "../../components/Header";
+import { LicensePlateInput } from "../../components/LicensePlateInput";
 
-import { Container, Content } from "./styles"
+import { Container, Content } from "./styles";
 
 export function Departure() {
   return (
@@ -9,8 +9,8 @@ export function Departure() {
       <Header title="Saída" />
 
       <Content>
-        <LicensePlateInput label="Place do veículo" placeholder="BRA4321" />
+        <LicensePlateInput label="Placa do veículo" placeholder="BRA4321" />
       </Content>
     </Container>
-  )
+  );
 }
