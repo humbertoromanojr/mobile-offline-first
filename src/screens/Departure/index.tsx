@@ -7,7 +7,9 @@ import {
   TextInput,
 } from "react-native";
 
+import { useUser } from "@realm/react";
 import { useRealm } from "../../libs/realm";
+import { Historic } from "../../libs/realm/schemas/Historic";
 
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
@@ -29,6 +31,7 @@ export function Departure() {
   const licensePlateRef = useRef<TextInput>(null);
 
   const realm = useRealm();
+  const user = useUser();
 
   function handleDepartureRegister() {
     try {
@@ -49,6 +52,19 @@ export function Departure() {
       }
 
       setIsRegistering(true);
+
+      realm.write(() => {
+        realm.create(
+          "Historic",
+          Historic.generate({
+            user_id: user!.id,
+            license_plate: licensePlate,
+            description: description,
+          })
+        );
+      });
+
+      Alert.alert("Exit", "Vehicle exit successfully registered!");
     } catch (error) {
       setIsRegistering(false);
       console.log("==> Error: ", error);
