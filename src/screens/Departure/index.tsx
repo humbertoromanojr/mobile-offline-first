@@ -21,6 +21,7 @@ const KeyboardAvoidingViewBehavior =
 export function Departure() {
   const [licensePlate, setLicensePlate] = useState("");
   const [description, setDescription] = useState("");
+  const [isRegistering, setIsRegistering] = useState(false);
 
   const descriptionRef = useRef<TextInput>(null);
   const licensePlateRef = useRef<TextInput>(null);
@@ -42,7 +43,16 @@ export function Departure() {
           "Please state the purpose for which you are using the vehicle"
         );
       }
-    } catch (error) {}
+
+      setIsRegistering(true);
+    } catch (error) {
+      setIsRegistering(false);
+      console.log("==> Error: ", error);
+      Alert.alert(
+        "Error",
+        "It was not possible to record the exit of the vehicle!!"
+      );
+    }
   }
 
   return (
@@ -71,7 +81,11 @@ export function Departure() {
               onChangeText={setDescription}
             />
 
-            <Button title="Registrar Saída" onPress={handleDepartureRegister} />
+            <Button
+              title="Registrar Saída"
+              onPress={handleDepartureRegister}
+              isLoading={isRegistering}
+            />
           </Content>
         </ScrollView>
       </KeyboardAvoidingView>
