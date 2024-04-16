@@ -7,6 +7,8 @@ import {
   TextInput,
 } from "react-native";
 
+import { useRealm } from "../../libs/realm";
+
 import { Header } from "../../components/Header";
 import { Button } from "../../components/Button";
 import { TextAreaInput } from "../../components/TextAreaInput";
@@ -25,6 +27,8 @@ export function Departure() {
 
   const descriptionRef = useRef<TextInput>(null);
   const licensePlateRef = useRef<TextInput>(null);
+
+  const realm = useRealm();
 
   function handleDepartureRegister() {
     try {
