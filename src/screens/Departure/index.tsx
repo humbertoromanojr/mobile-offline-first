@@ -26,13 +26,23 @@ export function Departure() {
   const licensePlateRef = useRef<TextInput>(null);
 
   function handleDepartureRegister() {
-    if (!licensePlateValidate(licensePlate)) {
-      licensePlateRef.current?.focus();
-      Alert.alert(
-        "Plate is Invalid",
-        "Invalid Plate,  informe correctly plate from your car please"
-      );
-    }
+    try {
+      if (!licensePlateValidate(licensePlate)) {
+        licensePlateRef.current?.focus();
+        return Alert.alert(
+          "Plate is Invalid",
+          "Invalid Plate,  informe correctly plate from your car please"
+        );
+      }
+
+      if (description.trim().length === 0) {
+        descriptionRef.current?.focus();
+        return Alert.alert(
+          "Purpose",
+          "Please state the purpose for which you are using the vehicle"
+        );
+      }
+    } catch (error) {}
   }
 
   return (
@@ -57,6 +67,7 @@ export function Departure() {
             <TextAreaInput
               ref={descriptionRef}
               label="Finalidade"
+              placeholder="Vou utilizar o veículo para..."
               onChangeText={setDescription}
             />
 
