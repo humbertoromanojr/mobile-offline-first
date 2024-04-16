@@ -1,3 +1,5 @@
+import "react-native-get-random-values";
+
 import { ThemeProvider } from "styled-components/native";
 import { AppProvider, UserProvider } from "@realm/react";
 import {
