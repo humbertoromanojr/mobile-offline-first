@@ -6,8 +6,9 @@ import {
   ScrollView,
   TextInput,
 } from "react-native";
-
 import { useUser } from "@realm/react";
+import { useNavigation } from "@react-navigation/native";
+
 import { useRealm } from "../../libs/realm";
 import { Historic } from "../../libs/realm/schemas/Historic";
 
@@ -29,6 +30,8 @@ export function Departure() {
 
   const descriptionRef = useRef<TextInput>(null);
   const licensePlateRef = useRef<TextInput>(null);
+
+  const { goBack } = useNavigation();
 
   const realm = useRealm();
   const user = useUser();
@@ -65,6 +68,8 @@ export function Departure() {
       });
 
       Alert.alert("Exit", "Vehicle exit successfully registered!");
+
+      goBack();
     } catch (error) {
       setIsRegistering(false);
       console.log("==> Error: ", error);
