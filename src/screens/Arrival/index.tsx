@@ -1,8 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { useRoute } from "@react-navigation/native";
 
-import { Container } from "./styles";
+import { Header } from "../../components/Header";
+import { Button } from "../../components/Button";
+
+import {
+  Container,
+  Content,
+  Description,
+  Footer,
+  Label,
+  LicensePlate,
+} from "./styles";
 
 type RouteParamsProps = {
   id: string;
@@ -13,11 +22,24 @@ export function Arrival() {
 
   const { id } = route.params as RouteParamsProps;
 
-  console.log("==> ID: ", id);
-
   return (
     <Container>
-      <Text></Text>
+      <Header title="Chegada" />
+      <Content>
+        <Label>Placa do veículo</Label>
+        <LicensePlate>XXX0000</LicensePlate>
+        <Label>Finalidade</Label>
+        <Description>
+          Descrição do uso do veículo descrição do uso do veículo descrição do
+          uso do veículo descrição do uso do veículo descrição do uso do veículo
+          descrição do uso do veículo descrição do uso do veículo descrição do
+          uso do veículo descrição do uso do veículo
+        </Description>
+
+        <Footer>
+          <Button title="Registrar Chegada" />
+        </Footer>
+      </Content>
     </Container>
   );
 }
