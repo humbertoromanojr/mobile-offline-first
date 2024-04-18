@@ -11,44 +11,48 @@ import { CarStatus } from "../../components/CarStatus";
 import { Container, Content } from "./styles";
 
 export function Home() {
-  const [vehicleInUse, setVehicleInUse] = useState<Historic | null>(null);
+    const [vehicleInUse, setVehicleInUse] = useState<Historic | null>(null);
 
-  const { navigate } = useNavigation();
+    const { navigate } = useNavigation();
 
-  const historic = useQuery(Historic);
+    const historic = useQuery(Historic);
 
-  function handleRegisterMovement() {
-    if (vehicleInUse?._id) {
-      navigate("arrival", { id: vehicleInUse?._id.toString() });
-    } else {
-      navigate("departure");
+    function handleRegisterMovement() {
+        if (vehicleInUse?._id) {
+            navigate("arrival", { id: vehicleInUse?._id.toString() });
+        } else {
+            navigate("departure");
+        }
     }
-  }
 
-  function fetchVehicle() {
-    try {
-      const vehicle = historic.filtered("status = 'departure'")[0];
-      setVehicleInUse(vehicle);
-    } catch (error) {
-      Alert.alert("Vehicle in use", "Vehicle in use could not be loaded!");
-      console.log("==> Error: ", error);
+    function fetchVehicle() {
+        try {
+            const vehicle = historic.filtered(`status == 'departure'`)[0];
+            setVehicleInUse(vehicle);
+            console.log("==> vehicle: ", vehicle);
+        } catch (error) {
+            Alert.alert(
+                "Vehicle in use",
+                "Vehicle in use could not be loaded!"
+            );
+            console.log("==> Error: ", error);
+        }
     }
-  }
 
-  useEffect(() => {
-    fetchVehicle();
-  }, []);
+    useEffect(() => {
+        fetchVehicle();
+    }, []);
 
-  return (
-    <Container>
-      <HomeHeader />
+    return (
+        <Container>
+            <HomeHeader />
 
-      <Content>
-        <CarStatus
-          licensePlate={vehicleInUse?.license_plate}
-          onPress={handleRegisterMovement}
-        />
-      </Content>
-    </Container>
-  );
+            <Content>
+                <CarStatus
+                    licensePlate={vehicleInUse?.license_plate}
+                    onPress={handleRegisterMovement}
+                />
+            </Content>
+        </Container>
+    );
 }
