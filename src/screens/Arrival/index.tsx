@@ -37,7 +37,7 @@ export function Arrival() {
     function handleRemoveVehicleUsage() {
         Alert.alert("Cancel", "Cancel the use of the vehicle?", [
             { text: "Não", style: "cancel" },
-            { text: "sim", onPress: () => removeVehicleUsage() },
+            { text: "Sim", onPress: () => removeVehicleUsage() },
         ]);
     }
 
