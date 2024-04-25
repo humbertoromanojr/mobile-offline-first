@@ -49,6 +49,29 @@ export function Arrival() {
         goBack();
     }
 
+    function handleVehicleRegister() {
+        try {
+            if (!historic) {
+                Alert.alert(
+                    "Error",
+                    "We couldn't get the data to register the vehicle's arrival!"
+                );
+            }
+
+            realm.write(() => {
+                historic!.status = "arrival";
+                historic!.updated_at = new Date();
+            });
+
+            Alert.alert("Success", "Arrival successfully registered!");
+
+            goBack();
+        } catch (error) {
+            console.log("==> Error - handleVehicleRegister: ", error);
+            Alert.alert("Error", "The vehicle could not arrive!");
+        }
+    }
+
     return (
         <Container>
             <Header title="Chegada" />
@@ -60,7 +83,10 @@ export function Arrival() {
 
                 <Footer>
                     <ButtonIcon icon={X} onPress={handleRemoveVehicleUsage} />
-                    <Button title="Registrar Chegada" />
+                    <Button
+                        title="Registrar Chegada"
+                        onPress={handleVehicleRegister}
+                    />
                 </Footer>
             </Content>
         </Container>
