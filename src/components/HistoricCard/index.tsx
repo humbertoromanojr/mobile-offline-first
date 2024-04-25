@@ -5,6 +5,7 @@ import { Check, ClockClockwise } from "phosphor-react-native";
 import { Container, Departure, Info, LicensePlate } from "./styles";
 
 export type HistoricCardProps = {
+    id: string;
     LicensePlate: string;
     created: string;
     isSync: boolean;
