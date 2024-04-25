@@ -60,7 +60,6 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
     <br />
     -- Before use command below: `npx expo run:android`; <br />
     -- Get code SHA1: `cd android && ./gradlew signingReport && cd ..`; <br />
-    <br />
     -- [English](https://www.youtube.com/watch?v=qjWm06CUAZI); <br />
     -- [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90); <br />
     <br />
@@ -72,10 +71,10 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 -   Install Realm: `npm install realm` and `npm install @realm/react`
 -   If it doesn't show your Avatar, it shows the image in blur: <br />
     -- [BlurHash](https://blurha.sh/); <br />
--   React navigation:
-    -- npm install @react-navigation/native;
-    -- npx expo install react-native-screens react-native-safe-area-context;
-    -- npm install @react-navigation/native-stack;
+-   React navigation: <br />
+    -- npm install @react-navigation/native; <br />
+    -- npx expo install react-native-screens react-native-safe-area-context; <br />
+    -- npm install @react-navigation/native-stack; <br />
 -   Install Get Random Values: `npm install react-native-get-random-values`;
 -   Install Dayjs: `npm install dayjs`;
 -   Install React native keyboard aware scroll view: `npm i react-native-keyboard-aware-scroll-view --save`;
