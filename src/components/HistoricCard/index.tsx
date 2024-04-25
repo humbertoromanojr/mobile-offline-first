@@ -1,7 +1,34 @@
-import { View, Text } from "react-native";
+import { TouchableOpacityProps } from "react-native";
+import { useTheme } from "styled-components/native";
+import { Check, ClockClockwise } from "phosphor-react-native";
 
-import { Container } from "./styles";
+import { Container, Departure, Info, LicensePlate } from "./styles";
 
-export default function HistoricCard() {
-    return <Container></Container>;
+export type HistoricCardProps = {
+    LicensePlate: string;
+    created: string;
+    isSync: boolean;
+};
+
+type Props = TouchableOpacityProps & {
+    data: HistoricCardProps;
+};
+
+export function HistoricCard({ data, ...rest }: Props) {
+    const { COLORS } = useTheme();
+
+    return (
+        <Container {...rest}>
+            <Info>
+                <LicensePlate>{data.LicensePlate}</LicensePlate>
+                <Departure>{data.created}</Departure>
+            </Info>
+
+            {data.isSync ? (
+                <Check size={24} color={COLORS.BRAND_LIGHT} />
+            ) : (
+                <ClockClockwise size={24} color={COLORS.GRAY_400} />
+            )}
+        </Container>
+    );
 }
