@@ -18,22 +18,24 @@ Ignite Fleet
 
 ## Mobile Libraries
 
-- <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
-- <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
+-   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — A JavaScript library for building user interfaces
+-   <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
 
-- [React Native](https://reactnative.dev/)
-- [Typescript](https://www.typescriptlang.org/)
-- [Expo](https://expo.dev/)
-- [Expo Web Browser](https://docs.expo.dev/versions/v49.0.0/sdk/webbrowser/)
-- [Expo AuthSession](https://docs.expo.dev/versions/latest/sdk/auth-session/)
-- [Expo Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
-- [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
-- [Styled Components](https://styled-components.com/docs)
-- [React Native Dotenv](https://github.com/goatandsheep/react-native-dotenv)
-- [MongoDB Atlas](https://mongodb.com)
-- [RealmDB](https://www.mongodb.com/docs/realm/sdk/react-native/install/)
-- [Phosphor icons](https://github.com/duongdev/phosphor-react-native)
-- [React navigation](https://reactnavigation.org/docs/getting-started/)
+-   [React Native](https://reactnative.dev/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [Expo](https://expo.dev/)
+    -   [Google Signin](https://docs.expo.dev/guides/google-authentication/)
+    -   [Expo Web Browser](https://docs.expo.dev/versions/v49.0.0/sdk/webbrowser/)
+    -   [Expo Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
+    -   [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
+-   [Styled Components](https://styled-components.com/docs)
+-   [Dotenv](https://github.com/goatandsheep/react-native-dotenv)
+-   [MongoDB Atlas](https://mongodb.com)
+-   [RealmDB](https://www.mongodb.com/docs/realm/sdk/react-native/install/)
+-   [Phosphor](https://github.com/duongdev/phosphor-react-native)
+-   [React Navigation](https://reactnavigation.org/docs/getting-started/)
+-   [Get Random Values](https://github.com/LinusU/react-native-get-random-values)
+-   [Dayjs](https://day.js.org/docs/en/installation/node-js)
 
 ## Important Settings
 
@@ -43,20 +45,37 @@ These other settings are extremely important, without them, your application wil
 🇧🇷
 Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
-- Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`
-- .env-example: `You will need to create your IDs`
-- Setting OAuth2 from Google:
-  - [English](https://www.youtube.com/watch?v=qjWm06CUAZI)
-  - [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90)
-- Setting MongoDB Atlas:
-  - [English](https://www.youtube.com/watch?v=xrc7dIO_tXk)
-  - [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8)
-- If it doesn't show your Avatar, it shows the image in blur:
-  - [BlurHash](https://blurha.sh/)
-- React navigation:
-  - npm install @react-navigation/native
-  - npx expo install react-native-screens react-native-safe-area-context
-  - npm install @react-navigation/native-stack
+-   Install Styled-components:
+    -- `npm install styled-components`;
+    -- `npm install --save-dev @types/styled-components @types/styled-components-react-native`;
+-   Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`;
+-   Install Dotenv:
+    -- `npm install -D react-native-dotenv`;
+    -- Create .env example: `.env-example - You will need to create your IDs`;
+    <br />
+-   Setting OAuth2 from Google:
+    -- Use command get folders Android and IOS: `npx expo prebuild`;
+    -- After get folders, you have paste packeage Name from API and Services Google Platform `console.cloud.google.com`;
+    -- Before use command below: `npx expo run:android`;
+    -- Get code SHA1: `cd android && ./gradlew signingReport && cd ..`;
+    <br />
+    -- [English](https://www.youtube.com/watch?v=qjWm06CUAZI);
+    -- [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90);
+    <br />
+-   Install Google Signin: `npm install @react-native-google-signin/google-signin`;
+-   Setting MongoDB Atlas:
+    -- [English](https://www.youtube.com/watch?v=xrc7dIO_tXk);
+    -- [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8);
+    <br />
+-   Install Realm: `npm install realm` and `npm install @realm/react`
+-   If it doesn't show your Avatar, it shows the image in blur:
+    -- [BlurHash](https://blurha.sh/);
+-   React navigation:
+    -- npm install @react-navigation/native;
+    -- npx expo install react-native-screens react-native-safe-area-context;
+    -- npm install @react-navigation/native-stack;
+-   Install Get Random Values: `npm install react-native-get-random-values`;
+-   Install Day js: `npm install dayjs`;
 
 ## Demonstration
 
@@ -85,9 +104,9 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 
 ## Sources:
 
-- rocketseat.com.br
-- getemoji.com
-- expo.dev
+-   rocketseat.com.br
+-   getemoji.com
+-   expo.dev
 
 ## Author
 
@@ -95,16 +114,24 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 <img src="https://drive.google.com/uc?export=view&id=1-y6rFrn4uqPfLx3nuUTXh14OeRGSZzHu" alt="" width="42" border="0" /> :guitar: Humberto Jr :guitar:
 <br /> <br />
 
-- [Linkedin](https://www.linkedin.com/in/humbertoromanojr) <br />
-- [Gitlab](https://gitlab.com/humbertoromanojr) <br />
-- <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" /> astronomi@gmail.com <br />
-  <br /> <br />
+-   [Linkedin](https://www.linkedin.com/in/humbertoromanojr) <br />
+-   [Gitlab](https://gitlab.com/humbertoromanojr) <br />
+-   <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" /> astronomi@gmail.com <br />
+    <br /> <br />
+
+## My Band
+
+Whether you're a fellow developer or just dropped in, please listen to my band and the music I make in my spare time:
+
+-   [Crux Cullum](https://cruxcullum.bandcamp.com/) <br />
 
 Made with :heart: and lots of animation by :guitar: Humberto Jr :guitar:
 
 ##
 
 <img src="https://drive.google.com/uc?export=view&id=1lAPQY5CLSU4ofNI7-kTS8SMtKo6NZt-B" alt="" width="22" border="0" /> Read more below <img src="https://drive.google.com/uc?export=view&id=1lAPQY5CLSU4ofNI7-kTS8SMtKo6NZt-B" alt="" width="22" border="0" />
+
+##
 
 ##
 
