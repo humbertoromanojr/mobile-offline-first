@@ -36,6 +36,7 @@ Ignite Fleet
 -   [React Navigation](https://reactnavigation.org/docs/getting-started/)
 -   [Get Random Values](https://github.com/LinusU/react-native-get-random-values)
 -   [Dayjs](https://day.js.org/docs/en/installation/node-js)
+-   [React Native keyboard Aware Scroll View](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
 
 ## Important Settings
 
@@ -45,37 +46,39 @@ These other settings are extremely important, without them, your application wil
 🇧🇷
 Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
--   Install Styled-components:
-    -- `npm install styled-components`;
-    -- `npm install --save-dev @types/styled-components @types/styled-components-react-native`;
+-   Install Styled-components: <br />
+    -- `npm install styled-components`; <br />
+    -- `npm install --save-dev @types/styled-components @types/styled-components-react-native`; <br />
 -   Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`;
--   Install Dotenv:
-    -- `npm install -D react-native-dotenv`;
-    -- Create .env example: `.env-example - You will need to create your IDs`;
+-   Install Dotenv: <br />
+    -- `npm install -D react-native-dotenv`; <br />
+    -- Create .env example: `.env-example - You will need to create your IDs`; <br />
     <br />
--   Setting OAuth2 from Google:
-    -- Use command get folders Android and IOS: `npx expo prebuild`;
+-   Setting OAuth2 from Google: <br />
+    -- Use command get folders Android and IOS: `npx expo prebuild`; <br />
     -- After get folders, you have paste packeage Name from API and Services Google Platform `console.cloud.google.com`;
-    -- Before use command below: `npx expo run:android`;
-    -- Get code SHA1: `cd android && ./gradlew signingReport && cd ..`;
     <br />
-    -- [English](https://www.youtube.com/watch?v=qjWm06CUAZI);
-    -- [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90);
+    -- Before use command below: `npx expo run:android`; <br />
+    -- Get code SHA1: `cd android && ./gradlew signingReport && cd ..`; <br />
+    <br />
+    -- [English](https://www.youtube.com/watch?v=qjWm06CUAZI); <br />
+    -- [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90); <br />
     <br />
 -   Install Google Signin: `npm install @react-native-google-signin/google-signin`;
--   Setting MongoDB Atlas:
-    -- [English](https://www.youtube.com/watch?v=xrc7dIO_tXk);
-    -- [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8);
+-   Setting MongoDB Atlas: <br />
+    -- [English](https://www.youtube.com/watch?v=xrc7dIO_tXk); <br />
+    -- [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8); <br />
     <br />
 -   Install Realm: `npm install realm` and `npm install @realm/react`
--   If it doesn't show your Avatar, it shows the image in blur:
-    -- [BlurHash](https://blurha.sh/);
+-   If it doesn't show your Avatar, it shows the image in blur: <br />
+    -- [BlurHash](https://blurha.sh/); <br />
 -   React navigation:
     -- npm install @react-navigation/native;
     -- npx expo install react-native-screens react-native-safe-area-context;
     -- npm install @react-navigation/native-stack;
 -   Install Get Random Values: `npm install react-native-get-random-values`;
--   Install Day js: `npm install dayjs`;
+-   Install Dayjs: `npm install dayjs`;
+-   Install React native keyboard aware scroll view: `npm i react-native-keyboard-aware-scroll-view --save`;
 
 ## Demonstration
 
