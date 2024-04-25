@@ -82,20 +82,16 @@ export function Arrival() {
                 <LicensePlate>{historic?.license_plate}</LicensePlate>
                 <Label>Finalidade</Label>
                 <Description>{historic?.description}</Description>
-
-                {historic?.status === "departure" && (
-                    <Footer>
-                        <ButtonIcon
-                            icon={X}
-                            onPress={handleRemoveVehicleUsage}
-                        />
-                        <Button
-                            title="Registrar Chegada"
-                            onPress={handleVehicleRegister}
-                        />
-                    </Footer>
-                )}
             </Content>
+            {historic?.status === "departure" && (
+                <Footer>
+                    <ButtonIcon icon={X} onPress={handleRemoveVehicleUsage} />
+                    <Button
+                        title="Registrar Chegada"
+                        onPress={handleVehicleRegister}
+                    />
+                </Footer>
+            )}
         </Container>
     );
 }

@@ -82,7 +82,9 @@ export function Home() {
         realm.addListener("change", () => fetchVehicleInUse());
 
         return () => {
-            realm.removeListener("change", fetchVehicleInUse);
+            if (realm && !realm.isClosed) {
+                realm.removeListener("change", fetchVehicleInUse);
+            }
         };
     }, []);
 
