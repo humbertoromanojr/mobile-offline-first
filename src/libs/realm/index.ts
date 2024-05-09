@@ -9,6 +9,16 @@ useQuery = use Searching DB
 useObject = get specific object
 */
 export const { RealmProvider, useRealm, useQuery, useObject } =
-  createRealmContext({
-    schema: [Historic],
-  });
+    createRealmContext({
+        schema: [Historic],
+    });
+
+const realmAccessBehavior: Realm.OpenRealmBehaviorConfiguration = {
+    type: Realm.OpenRealmBehaviorType.OpenImmediately,
+};
+
+export const syncConfig: any = {
+    flexible: true,
+    newRealmFileBehavior: realmAccessBehavior,
+    existingRealmFileBehavior: realmAccessBehavior,
+};

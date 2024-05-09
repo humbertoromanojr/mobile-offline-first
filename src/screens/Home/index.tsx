@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Alert, FlatList } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import dayjs from "dayjs";
+import { useUser } from "@realm/react";
 
 import { useQuery, useRealm } from "../../libs/realm";
 import { Historic } from "../../libs/realm/schemas/Historic";
@@ -20,6 +21,7 @@ export function Home() {
 
     const { navigate } = useNavigation();
 
+    const user = useUser();
     const realm = useRealm();
 
     const historic = useQuery(Historic);
@@ -91,6 +93,16 @@ export function Home() {
     useEffect(() => {
         fetchHistoric();
     }, [historic]);
+
+    useEffect(() => {
+        realm.subscriptions.update((mutableSubs, realm) => {
+            const historicByUserQuery = realm
+                .objects("Historic")
+                .filtered(`user_id = '${user!.id}'`);
+
+            mutableSubs.add(historicByUserQuery, { name: "historic_by_user_" });
+        });
+    }, [realm]);
 
     return (
         <Container>
