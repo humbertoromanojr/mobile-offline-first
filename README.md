@@ -29,6 +29,7 @@ Ignite Fleet
     -   [Expo Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
     -   [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
     -   [Netinfo](https://docs.expo.dev/versions/latest/sdk/netinfo/)
+    -   [Async Storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
 -   [Styled Components](https://styled-components.com/docs)
 -   [Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 -   [MongoDB Atlas](https://mongodb.com)
@@ -38,6 +39,7 @@ Ignite Fleet
 -   [Get Random Values](https://github.com/LinusU/react-native-get-random-values)
 -   [Dayjs](https://day.js.org/docs/en/installation/node-js)
 -   [React Native keyboard Aware Scroll View](https://github.com/APSL/react-native-keyboard-aware-scroll-view)
+-   [React Native Toast Message](https://github.com/calintamas/react-native-toast-message)
 
 ## Important Settings
 
@@ -80,6 +82,8 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 -   Install Dayjs: `npm install dayjs`;
 -   Install React native keyboard aware scroll view: `npm i react-native-keyboard-aware-scroll-view --save`;
 -   INstall Netinfo: `npx expo install @react-native-community/netinfo`;
+-   Install Async Storage: `npx expo install @react-native-async-storage/async-storage`;
+-   Install React Native Toast Message in Quick start: `npm install --save react-native-toast-message`;
 
 ## Demonstration
 
