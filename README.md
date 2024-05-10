@@ -22,12 +22,13 @@ Ignite Fleet
 -   <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> — Learn once, write anywhere. Create native apps for Android and iOS using React.
 
 -   [React Native](https://reactnative.dev/)
--   [Typescript](https://www.typescriptlang.org/)
+-   [TypeScript](https://www.typescriptlang.org/)
 -   [Expo](https://expo.dev/)
     -   [Google Signin](https://docs.expo.dev/guides/google-authentication/)
     -   [Expo Web Browser](https://docs.expo.dev/versions/v49.0.0/sdk/webbrowser/)
     -   [Expo Svg](https://docs.expo.dev/versions/latest/sdk/svg/)
     -   [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
+    -   [Netinfo](https://docs.expo.dev/versions/latest/sdk/netinfo/)
 -   [Styled Components](https://styled-components.com/docs)
 -   [Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 -   [MongoDB Atlas](https://mongodb.com)
@@ -78,6 +79,7 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 -   Install Get Random Values: `npm install react-native-get-random-values`;
 -   Install Dayjs: `npm install dayjs`;
 -   Install React native keyboard aware scroll view: `npm i react-native-keyboard-aware-scroll-view --save`;
+-   INstall Netinfo: `npx expo install @react-native-community/netinfo`;
 
 ## Demonstration
 
