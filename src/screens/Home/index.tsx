@@ -38,7 +38,6 @@ export function Home() {
         try {
             const vehicle = historic.filtered(`status == 'departure'`)[0];
             setVehicleInUse(vehicle);
-            console.log("==> vehicle: ", vehicle);
         } catch (error) {
             Alert.alert(
                 "Vehicle in use",
