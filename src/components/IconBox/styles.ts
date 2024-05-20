@@ -20,7 +20,13 @@ const variantSizeStyles = (size: SizeProps) => {
 };
 
 export const Container = styled.View<Props>`
-    flex: 1;
+    border-radius: 7px;
+    background-color: ${({ theme }) => theme.COLORS.GRAY_700};
+
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 12px;
 
     ${({ size }) => variantSizeStyles(size)}
 `;
