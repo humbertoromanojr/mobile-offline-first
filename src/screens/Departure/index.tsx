@@ -20,6 +20,7 @@ import { LicensePlateInput } from "../../components/LicensePlateInput";
 
 import { Container, Content, Message } from "./styles";
 import { licensePlateValidate } from "../../utils/licensePlateValidate";
+import { getAddressLocation } from "../../utils/getAddressLocation";
 
 export function Departure() {
     const [licensePlate, setLicensePlate] = useState("");
@@ -98,7 +99,9 @@ export function Departure() {
                 timeInterval: 1000,
             },
             (location) => {
-                console.log(location);
+                getAddressLocation(location.coords).then((address) => {
+                    console.log("==> Address: ", address);
+                });
             }
         ).then((response) => (subscription = response));
 
