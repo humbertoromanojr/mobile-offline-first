@@ -30,6 +30,7 @@ Ignite Fleet
     -   [Expo Image](https://docs.expo.dev/versions/latest/sdk/image/)
     -   [Netinfo](https://docs.expo.dev/versions/latest/sdk/netinfo/)
     -   [Async Storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
+    -   [Location](https://docs.expo.dev/versions/latest/sdk/location/)
 -   [Styled Components](https://styled-components.com/docs)
 -   [Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 -   [MongoDB Atlas](https://mongodb.com)
@@ -50,40 +51,41 @@ These other settings are extremely important, without them, your application wil
 Estas outras configurações, são de extrema importância, sem elas, a sua aplicação não vai funcionar, se não seguir passo a passo.
 
 -   Install Styled-components: <br />
-    -- `npm install styled-components`; <br />
-    -- `npm install --save-dev @types/styled-components @types/styled-components-react-native`; <br />
+    -   `npm install styled-components`; <br />
+    -   `npm install --save-dev @types/styled-components @types/styled-components-react-native`; <br />
 -   Install fonts google: `npx expo install expo-font @expo-google-fonts/roboto`;
 -   Install Dotenv: <br />
-    -- `npm install -D react-native-dotenv`; <br />
-    -- Create .env example: `.env-example - You will need to create your IDs`; <br />
-    <br />
+    -   `npm install -D react-native-dotenv`; <br />
+    -   Create .env example: `.env-example - You will need to create your IDs`; <br />
+        <br />
 -   Setting OAuth2 from Google: <br />
-    -- Use command get folders Android and IOS: `npx expo prebuild`; <br />
-    -- After get folders, you have paste packeage Name from API and Services Google Platform `console.cloud.google.com`;
-    <br />
-    -- Before use command below: `npx expo run:android`; <br />
-    -- Get code SHA1: `cd android && ./gradlew signingReport && cd ..`; <br />
-    -- [English](https://www.youtube.com/watch?v=qjWm06CUAZI); <br />
-    -- [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90); <br />
-    <br />
+    -   Use command get folders Android and IOS: `npx expo prebuild`; <br />
+    -   After get folders, you have paste packeage Name from API and Services Google Platform `console.cloud.google.com`;
+        <br />
+    -   Before use command below: `npx expo run:android`; <br />
+    -   Get code SHA1: `cd android && ./gradlew signingReport && cd ..`; <br />
+    -   [English](https://www.youtube.com/watch?v=qjWm06CUAZI); <br />
+    -   [pt-BR](https://www.youtube.com/watch?v=SwCA0K3gy90); <br />
+        <br />
 -   Install Google Signin: `npm install @react-native-google-signin/google-signin`;
 -   Setting MongoDB Atlas: <br />
-    -- [English](https://www.youtube.com/watch?v=xrc7dIO_tXk); <br />
-    -- [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8); <br />
-    <br />
+    -   [English](https://www.youtube.com/watch?v=xrc7dIO_tXk); <br />
+    -   [pt-BR](https://www.youtube.com/watch?v=BA3QM6Sy1S8); <br />
+        <br />
 -   Install Realm: `npm install realm` and `npm install @realm/react`
 -   If it doesn't show your Avatar, it shows the image in blur: <br />
-    -- [BlurHash](https://blurha.sh/); <br />
+    -   [BlurHash](https://blurha.sh/); <br />
 -   React navigation: <br />
-    -- npm install @react-navigation/native; <br />
-    -- npx expo install react-native-screens react-native-safe-area-context; <br />
-    -- npm install @react-navigation/native-stack; <br />
+    -   npm install @react-navigation/native; <br />
+    -   npx expo install react-native-screens react-native-safe-area-context; <br />
+    -   npm install @react-navigation/native-stack; <br />
 -   Install Get Random Values: `npm install react-native-get-random-values`;
 -   Install Dayjs: `npm install dayjs`;
 -   Install React native keyboard aware scroll view: `npm i react-native-keyboard-aware-scroll-view --save`;
--   INstall Netinfo: `npx expo install @react-native-community/netinfo`;
+-   Install Netinfo: `npx expo install @react-native-community/netinfo`;
 -   Install Async Storage: `npx expo install @react-native-async-storage/async-storage`;
 -   Install React Native Toast Message in Quick start: `npm install --save react-native-toast-message`;
+-   Install Location: `npx expo install expo-location`;
 
 ## Demonstration
 
