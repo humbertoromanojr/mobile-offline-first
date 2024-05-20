@@ -3,6 +3,7 @@ import { Alert, ScrollView, TextInput } from "react-native";
 import { useUser } from "@realm/react";
 import { useNavigation } from "@react-navigation/native";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import { Car } from "phosphor-react-native";
 import {
     useForegroundPermissions,
     watchPositionAsync,
@@ -146,6 +147,7 @@ export function Departure() {
                     <Content>
                         {currentAddress && (
                             <LocationInfo
+                                icon={Car}
                                 label="Localização atual"
                                 description={currentAddress}
                             />
