@@ -19,7 +19,9 @@ module.exports = {
         ios: {
             supportsTablet: true,
             bundleIdentifier: "com.humbertoromanojr.ignitefleet",
-            config: { googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY },
+            config: {
+                googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+            },
         },
         android: {
             adaptiveIcon: {
@@ -28,7 +30,9 @@ module.exports = {
             },
             package: "com.humbertoromanojr.ignitefleet",
             config: {
-                googleMapsApi: { apiKey: process.envGOOGLE_MAPS_API_KEY },
+                googleMapsApi: {
+                    apiKey: process.envGOOGLE_MAPS_API_KEY,
+                },
             },
         },
         web: {
