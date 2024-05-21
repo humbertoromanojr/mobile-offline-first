@@ -4,7 +4,9 @@ import MapView, {
     MapViewProps,
     LatLng,
     Marker,
+    Polyline,
 } from "react-native-maps";
+import { useTheme } from "styled-components";
 import { Car, FlagCheckered } from "phosphor-react-native";
 
 import { IconBox } from "../IconBox";
@@ -14,6 +16,8 @@ type Props = MapViewProps & {
 };
 
 export function Map({ coordinates, ...rest }: Props) {
+    const { COLORS } = useTheme();
+
     const mapRef = useRef<MapView>(null);
     const lastCoordinates = coordinates[coordinates.length - 1];
 
@@ -21,10 +25,10 @@ export function Map({ coordinates, ...rest }: Props) {
         if (coordinates.length > 1) {
             mapRef.current?.fitToSuppliedMarkers(["departure", "arrival"], {
                 edgePadding: {
-                    top: 50,
-                    right: 50,
-                    bottom: 50,
-                    left: 50,
+                    top: 100,
+                    right: 100,
+                    bottom: 100,
+                    left: 100,
                 },
             });
         }
@@ -32,6 +36,7 @@ export function Map({ coordinates, ...rest }: Props) {
 
     return (
         <MapView
+            ref={mapRef}
             provider={PROVIDER_GOOGLE}
             style={{ width: "100%", height: 200 }}
             region={{
@@ -48,9 +53,17 @@ export function Map({ coordinates, ...rest }: Props) {
             </Marker>
 
             {coordinates.length > 1 && (
-                <Marker identifier="arrival" coordinate={lastCoordinates}>
-                    <IconBox size="SMALL" icon={FlagCheckered} />
-                </Marker>
+                <>
+                    <Marker identifier="arrival" coordinate={lastCoordinates}>
+                        <IconBox size="SMALL" icon={FlagCheckered} />
+                    </Marker>
+
+                    <Polyline
+                        coordinates={[...coordinates]}
+                        strokeColor={COLORS.GRAY_700}
+                        strokeWidth={3}
+                    />
+                </>
             )}
         </MapView>
     );
