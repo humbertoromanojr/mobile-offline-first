@@ -31,6 +31,7 @@ Ignite Fleet
     -   [Netinfo](https://docs.expo.dev/versions/latest/sdk/netinfo/)
     -   [Async Storage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
     -   [Location](https://docs.expo.dev/versions/latest/sdk/location/)
+    -   [Map View](https://docs.expo.dev/versions/latest/sdk/map-view/)
 -   [Styled Components](https://styled-components.com/docs)
 -   [Dotenv](https://github.com/goatandsheep/react-native-dotenv)
 -   [MongoDB Atlas](https://mongodb.com)
@@ -86,6 +87,7 @@ Estas outras configurações, são de extrema importância, sem elas, a sua apli
 -   Install Async Storage: `npx expo install @react-native-async-storage/async-storage`;
 -   Install React Native Toast Message in Quick start: `npm install --save react-native-toast-message`;
 -   Install Location: `npx expo install expo-location`;
+-   Install Map View: `npx expo install react-native-maps`;
 
 ## Demonstration
 
