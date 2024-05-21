@@ -6,6 +6,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { Car } from "phosphor-react-native";
 import {
     useForegroundPermissions,
+    requestBackgroundPermissionsAsync,
     watchPositionAsync,
     LocationAccuracy,
     LocationSubscription,
@@ -47,7 +48,7 @@ export function Departure() {
     const realm = useRealm();
     const user = useUser();
 
-    function handleDepartureRegister() {
+    async function handleDepartureRegister() {
         try {
             if (!licensePlateValidate(licensePlate)) {
                 licensePlateRef.current?.focus();
@@ -73,6 +74,18 @@ export function Departure() {
             }
 
             setIsRegistering(true);
+
+            const backgroundPermissions =
+                await requestBackgroundPermissionsAsync();
+
+            if (!backgroundPermissions.granted) {
+                setIsRegistering(false);
+
+                return Alert.alert(
+                    "Location",
+                    "É necessário permitir que o App tenha acesso a localização em segundo plano.  Acesse as configurações do dispositivo e habilite 'Permitir o tempo todo'."
+                );
+            }
 
             realm.write(() => {
                 realm.create(
