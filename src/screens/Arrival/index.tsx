@@ -23,6 +23,7 @@ import { ButtonIcon } from "../../components/ButtonIcon";
 
 import { getLastSyncTimestamp } from "../../libs/asyncStorage/syncStorage";
 import { stopLocationTask } from "../../tasks/backgroundLocationTask";
+import { getStorageLocations } from "../../libs/asyncStorage/locationStorage";
 
 type RouteParamsProps = {
     id: string;
@@ -83,11 +84,19 @@ export function Arrival() {
         }
     }
 
+    async function getLocationsInfo() {
+        const lastSync = await getLastSyncTimestamp();
+        const updatedAt = historic!.updated_at.getTime();
+
+        setDataNotSynced(updatedAt > lastSync);
+
+        const locationsStorage = await getStorageLocations();
+        console.log(locationsStorage);
+    }
+
     useEffect(() => {
-        getLastSyncTimestamp().then((lastSync) =>
-            setDataNotSynced(historic!.updated_at.getTime() > lastSync)
-        );
-    }, []);
+        getLocationsInfo();
+    }, [historic]);
 
     return (
         <Container>
