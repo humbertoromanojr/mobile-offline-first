@@ -24,9 +24,11 @@ import { LocationInfo } from "../../components/LocationInfo";
 import { TextAreaInput } from "../../components/TextAreaInput";
 import { LicensePlateInput } from "../../components/LicensePlateInput";
 
-import { Container, Content, Message } from "./styles";
 import { licensePlateValidate } from "../../utils/licensePlateValidate";
 import { getAddressLocation } from "../../utils/getAddressLocation";
+import { startLocationTask } from "../../tasks/backgroundLocationTask";
+
+import { Container, Content, Message } from "./styles";
 
 export function Departure() {
     const [licensePlate, setLicensePlate] = useState("");
@@ -86,6 +88,8 @@ export function Departure() {
                     "É necessário permitir que o App tenha acesso a localização em segundo plano.  Acesse as configurações do dispositivo e habilite 'Permitir o tempo todo'."
                 );
             }
+
+            await startLocationTask();
 
             realm.write(() => {
                 realm.create(
