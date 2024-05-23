@@ -54,10 +54,12 @@ export function Arrival() {
         ]);
     }
 
-    function removeVehicleUsage() {
+    async function removeVehicleUsage() {
         realm.write(() => {
             realm.delete(historic);
         });
+
+        await stopLocationTask();
 
         goBack();
     }
@@ -71,12 +73,12 @@ export function Arrival() {
                 );
             }
 
-            await stopLocationTask();
-
             realm.write(() => {
                 historic!.status = "arrival";
                 historic!.updated_at = new Date();
             });
+
+            await stopLocationTask();
 
             Alert.alert("Success", "Arrival successfully registered!");
 
