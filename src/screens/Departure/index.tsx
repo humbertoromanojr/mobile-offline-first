@@ -24,11 +24,12 @@ import { LocationInfo } from "../../components/LocationInfo";
 import { TextAreaInput } from "../../components/TextAreaInput";
 import { LicensePlateInput } from "../../components/LicensePlateInput";
 
+import { openSettings } from "../../utils/openSettings";
 import { licensePlateValidate } from "../../utils/licensePlateValidate";
 import { getAddressLocation } from "../../utils/getAddressLocation";
 import { startLocationTask } from "../../tasks/backgroundLocationTask";
 
-import { Container, Content, Message } from "./styles";
+import { Container, Content, Message, MessageContent } from "./styles";
 
 export function Departure() {
     const [licensePlate, setLicensePlate] = useState("");
@@ -85,7 +86,8 @@ export function Departure() {
 
                 return Alert.alert(
                     "Location",
-                    "É necessário permitir que o App tenha acesso a localização em segundo plano.  Acesse as configurações do dispositivo e habilite 'Permitir o tempo todo'."
+                    "É necessário permitir que o App tenha acesso a localização em segundo plano.  Acesse as configurações do dispositivo e habilite 'Permitir o tempo todo'.",
+                    [{ text: "Abrir Configurações", onPress: openSettings }]
                 );
             }
 
@@ -162,11 +164,19 @@ export function Departure() {
         return (
             <Container>
                 <Header title="Saída" />
-                <Message>
-                    Você precisa permitir o acesso a localização, para utilizar
-                    essa funcionalidade. Por favor, acesse as configurações do
-                    seu aparelho para conceder essa permissão.
-                </Message>
+                <MessageContent>
+                    <Message>
+                        Você precisa permitir o acesso a localização, para
+                        utilizar essa funcionalidade. Por favor, acesse as
+                        configurações do seu aparelho para conceder essa
+                        permissão.
+                    </Message>
+
+                    <Button
+                        title="Abrir Configurações"
+                        onPress={openSettings}
+                    />
+                </MessageContent>
             </Container>
         );
     }
