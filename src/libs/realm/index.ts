@@ -23,8 +23,4 @@ useObject = get specific object
 export const { RealmProvider, useRealm, useQuery, useObject } =
     createRealmContext({
         schema: [Historic, Coords],
-<<<<<<< Updated upstream
-=======
-        schemaVersion: 1,
->>>>>>> Stashed changes
     });

@@ -16,7 +16,7 @@ export function IconBox({ size = "NORMAL", icon: Icon }: Props) {
 
     return (
         <Container size={size}>
-            <Icon size={iconSize} color={COLORS.BAND_LIGHT} />
+            <Icon size={iconSize} color={COLORS.BRAND_LIGHT} />
         </Container>
     );
 }
