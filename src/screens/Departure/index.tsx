@@ -97,7 +97,14 @@ export function Departure() {
                     Historic.generate({
                         user_id: user!.id,
                         license_plate: licensePlate,
-                        description: description,
+                        description,
+                        coords: [
+                            {
+                                latitude: currentCoords?.latitude,
+                                longitude: currentCoords?.longitude,
+                                timestamp: new Date().getTime(),
+                            },
+                        ],
                     })
                 );
             });
