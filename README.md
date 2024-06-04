@@ -4,7 +4,7 @@
 Ignite Fleet
 </h1>
 
-> Status from Project: <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" /> Under construction <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" />
+> Status from Project: <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" /> Finished <img src="https://drive.google.com/uc?export=view&id=1Tak2fjuusuwdzNI_rwhPqLHGVLVKNTm1" alt="" width="32" border="0" />
 
 ## Shields
 
@@ -133,13 +133,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://opens
 -   <img src="https://drive.google.com/uc?export=view&id=160InxEPlK0IynTEGEmQJDETo_8grncjI" alt="" width="22" border="0" /> astronomi@gmail.com <br />
     <br /> <br />
 
-## My Band
-
-Whether you're a fellow developer or just dropped in, please listen to my band and the music I make in my spare time:
-
--   [Crux Cullum](https://cruxcullum.bandcamp.com/) <br />
-
-Made with :heart: and lots of animation by :guitar: Humberto Jr :guitar:
+##
 
 ##
 
